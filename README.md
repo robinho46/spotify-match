@@ -54,6 +54,8 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
 
 You can obtain these credentials by registering an application at:  
 https://developer.spotify.com/dashboard
+> **Important:** Keep your `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` confidential.  
+> Never commit them to version control or share them publicly. They grant access to your Spotify data.
 
 Use the following as your redirect URI if needed:
 
