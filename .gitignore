@@ -1,0 +1,10 @@
+# Go
+*.exe
+*.out
+*.test
+
+# Env / secrets
+.env
+
+# Build artifacts
+spotify-match
