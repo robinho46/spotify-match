@@ -12,7 +12,7 @@ import (
 	"github.com/robinho46/spotify-match.git/internal/spotify"
 )
 
-func extractPlaylistID(link string) string {
+func ExtractPlaylistID(link string) string {
 	link = strings.TrimSpace(link)
 	if strings.Contains(link, "playlist/") {
 		parts := strings.Split(link, "playlist/")
@@ -76,8 +76,8 @@ func Execute() {
 	done := make(chan bool)
 	go spinner(done, "Analyzing playlists")
 
-	id1 := extractPlaylistID(link1)
-	id2 := extractPlaylistID(link2)
+	id1 := ExtractPlaylistID(link1)
+	id2 := ExtractPlaylistID(link2)
 
 	tracks1, err := spotify.GetPlaylistTracks(id1, token)
 	if err != nil {
